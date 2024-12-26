@@ -17,7 +17,7 @@ jobs:
     - name: Publish Docker Image
       env:
          USERNAME: ${{ secrets.USERNAME }}
-         PASSWORD: ${{ secrets.PASSWORD }}
+         TOKEN: ${{ secrets.TOKEN }}
          IMAGE_NAME: gopost
       run: |
         docker images
